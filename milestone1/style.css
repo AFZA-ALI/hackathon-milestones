@@ -1,0 +1,132 @@
+/* General Styling */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Adjusted for smaller screens */
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px; /* Limits maximum width on large screens */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Stacks sections on small screens by default */
+}
+
+/* Right Section Styling */
+.right-section {
+    background-color: #0e0144;
+    color: white;
+    padding: 20px;
+    width: 100%; /* Full width on small screens */
+    text-align: center;
+    border-right: none; /* Removes border on small screens */
+    border-bottom: 5px solid #860952; /* Adds a bottom border for visual separation */
+}
+
+.profile-picture {
+    width: 120px; /* Smaller on mobile */
+    height: 120px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #860952;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #860952;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Left Section Styling */
+.left-section {
+    padding: 20px;
+    width: 100%; /* Full width on small screens */
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #6a778b;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .resume-container {
+        flex-direction: row; /* Side-by-side layout on tablets and larger screens */
+        padding: 50px;
+    }
+    
+    .right-section {
+        width: 35%;
+        border-right: 5px solid #860952; /* Adds border back for larger screens */
+        border-bottom: none; /* Removes bottom border */
+    }
+    
+    .left-section {
+        width: 65%;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 50px;
+    }
+    
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    button {
+        font-size: 20px;
+    }
+}
